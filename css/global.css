@@ -1,0 +1,39 @@
+/* BEGIN -- basic global styling/rules */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #868686;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: left;
+    gap: 25px;
+}
+
+main {
+    margin-top: 120px;
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+}
+
+.mainContent {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #d3d3d3;
+}
+
+/* END -- basic global styling/rules */
