@@ -25,9 +25,18 @@
             <hr />
     
             <main>
-                <!-- ... -->
+                <form name="contactForm" action="contact-form-handler.php" method="POST" onsubmit="return validateForm();">
+                    <input type="text" name="name" placeholder="Your Name">
+                    <br>
+                    <input type="email" name="email" placeholder="Your Email">
+                    <br>
+                    <textarea name="message" placeholder="Your Message"></textarea>
+                    <br>
+                    <input type="submit" value="Send">
+                </form>
             </main>
     
+            <br />
             <hr />
 
             <footer>
