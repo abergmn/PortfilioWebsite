@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    position: fixed;
+    position: relative;
     top: 0;
     width: 100%;
 }
@@ -21,7 +21,7 @@ header nav ul {
 }
 
 main {
-    margin-top: 120px;
+    margin-top: 25px;
 }
 
 footer {
@@ -30,10 +30,9 @@ footer {
 }
 
 .mainContent {
-    margin: 0 auto;
+    margin: 45px auto;
     max-width: 800px;
     padding: 20px;
     background-color: #d3d3d3;
 }
-
 /* END -- basic global styling/rules */
