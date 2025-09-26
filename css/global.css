@@ -1,9 +1,25 @@
 /* BEGIN -- basic global styling/rules */
-body {
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #222222;
+}
+
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #868686;
 }
+
+body {
+    /*
+    background-color: #a9a9a9;
+    background-image: url("https://transparenttextures.com/patterns/absurdity.png");
+    background-repeat: repeat;
+    */
+
+    background: linear-gradient(to bottom, #a9a9a9, #808080);
+}
+
 
 header {
     position: relative;
@@ -34,5 +50,15 @@ footer {
     max-width: 800px;
     padding: 20px;
     background-color: #d3d3d3;
+}
+
+.bevel-box {
+    background-color: #c0c0c0;
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-bottom: 2px solid #808080;
+    border-right: 2px solid #808080;
+    font-family: Tahoma, Verdana, sans-serif;
+    box-shadow: inset 1px 1px #00000022;
 }
 /* END -- basic global styling/rules */
