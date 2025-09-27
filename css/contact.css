@@ -1,1 +1,27 @@
-/* ... */
+#contact-form-main {
+    display: flex;
+    flex-direction: column;
+}
+
+form[name="contactForm"] input[type="text"],
+form[name="contactForm"] input[type="email"],
+form[name="contactForm"] textarea {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+    padding: 4px 6px;
+}
+
+form[name="contactForm"] textarea {
+    min-height: 60px;
+    resize: vertical;
+}
+
+form[name="contactForm"] input[type="submit"] {
+    padding: 6px 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    max-width: 120px;
+}

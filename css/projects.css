@@ -1,22 +1,68 @@
+body {
+    background-color: #c0c0c0;
+    font-family: Tahoma, Verdana, sans-serif;
+}
+
+.project-gallery {
+    display: flex;
+    overflow-x: auto;
+    border: 2px inset #808080;
+    background-color: #d3d3d3;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.project-card {
+    flex: 0 0 auto;
+    width: 200px;
+    margin-right: 12px;
+    border: 2px outset #ffffff;
+    background-color: #e0e0e0;
+    text-align: center;
+    padding: 6px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid #000000;
+}
+
+.project-card h3 {
+    margin: 8px 0 0 0;
+    font-size: 1rem;
+}
+
+/* Modal (classic lightbox style) */
 .modal {
-                        display: none;
-                        position: fixed;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
-                        background: rgba(0, 0, 0, 0.7);
-                    }
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(128, 128, 128, 0.8);
+    z-index: 1000;
+}
 
-                    .modal-content {
-                        background: #fff;
-                        margin: 10% auto;
-                        padding: 20px;
-                        width: 60%;
-                    }
+.modal-content {
+    background: #ffffff;
+    border: 2px solid #000;
+    padding: 20px;
+    width: 500px;
+    margin: 10% auto;
+    position: relative;
+    font-size: 1rem;
+}
 
-                    .close {
-                        float: right;
-                        font-size: 28px;
-                        cursor: pointer;
-                    }
+.close {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    cursor: pointer;
+    font-family: monospace;
+    font-size: 16px;
+    color: #000;
+}

@@ -4,6 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+
         <title>Contact</title>
 
         <link rel="stylesheet" href="/css/global.css" />
@@ -26,25 +28,22 @@
     
             <main>
                 <h2>Get in Touch</h2>
-
                 <p>
                     Thanks for visiting my website! Questions? Comments? Looking to colaborate?
                     <br />
-                    feel free to reach out using the form below, or, <a href="mailto:example@example.com">email me</a> directly!
+                    Please reach out using the form below or by clicking <a href="mailto:example@example.com">this link</a> to email me directly!
                 </p>
 
-                <form name="contactForm"
-                      action="contact-form-handler.php"
-                      method="POST"
-                      onsubmit="return validateForm();"
-                      aria-label="Contact form">
-                    <input type="text" name="name" placeholder="Your Name" required aria-required="true">
-                    <br>
-                    <input type="email" name="email" placeholder="Your Email" required aria-required="true">
-                    <br>
-                    <textarea name="message" placeholder="Your Message" required aria-required="true"></textarea>
-                    <br>
-                    <input type="submit" value="Send">
+                <form id="contact-form-main"
+                        name="contactForm"
+                        action="contact-form-handler.php"
+                        method="POST"
+                        onsubmit="return validateForm();"
+                        aria-label="Contact form">
+                    <input id="name" type="text" name="name" placeholder="Your Name" required aria-required="true" />
+                    <input id="email" type="email" name="email" placeholder="Your Email" required aria-required="true" />
+                    <textarea id="message" name="message" placeholder="Your Message" required aria-required="true"></textarea>
+                    <input type="submit" value="Send" />
                 </form>
             </main>
     

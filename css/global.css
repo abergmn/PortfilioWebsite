@@ -18,6 +18,7 @@ body {
     font-size: 1rem;
     line-height: 1.5;
     background: linear-gradient(to bottom, #a9a9a9, #808080);
+    /* padding-bottom: 45px; */
 }
 
 header {
@@ -45,7 +46,7 @@ footer {
 }
 
 .mainContent {
-    margin: 45px auto;
+    margin: 45px auto 0 auto;
     max-width: 800px;
     padding: 20px;
     background-color: #d3d3d3;
