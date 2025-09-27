@@ -1,3 +1,13 @@
+/*
+
+for db:
+
+CREATE TABLE visitors (
+    ip VARCHAR(45) NOT NULL UNIQUE
+);
+
+*/
+
 <?php
 
 $host = "localhost";
