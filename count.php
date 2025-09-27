@@ -1,13 +1,28 @@
 <?php
 
-$counterFile = "count.txt";
-$count = (int)file_get_contents($counterFile);
+$host = "localhost";
+$dbname = "database_name";
+$uname = "db_username";
+$pword = "db_password";
 
-// todo:
-// check if file exists
-// if exists, get existing count, increase by one
-// write back to count.txt
+// create and test db connection
+$conn = new mysqli($host, $uname, $pword, $dbname);
+if ($conn->connect_error) {
+    die("Failed to connect: " . $conn->connect_error);
+}
 
-echo $count;
+// get user IP
+$ip = $_SERVER['REMOTE_ADDRESS'];
+
+// insert IP to db
+$conn->query("INSERT IGNORE INTO visitors (ip) VALUES ('$ip')");
+
+// get unique visitor count
+$result = $conn->query("SELECT COUNT(*) AS total FROM visitors");
+$row = $result->fetch_assoc();
+
+echo "Unique visitors: " . $row['total'];
+
+$conn->close();
 
 ?>
