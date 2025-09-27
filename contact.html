@@ -33,12 +33,16 @@
                     feel free to reach out using the form below, or, <a href="mailto:example@example.com">email me</a> directly!
                 </p>
 
-                <form name="contactForm" action="contact-form-handler.php" method="POST" onsubmit="return validateForm();">
-                    <input type="text" name="name" placeholder="Your Name">
+                <form name="contactForm"
+                      action="contact-form-handler.php"
+                      method="POST"
+                      onsubmit="return validateForm();"
+                      aria-label="Contact form">
+                    <input type="text" name="name" placeholder="Your Name" required aria-required="true">
                     <br>
-                    <input type="email" name="email" placeholder="Your Email">
+                    <input type="email" name="email" placeholder="Your Email" required aria-required="true">
                     <br>
-                    <textarea name="message" placeholder="Your Message"></textarea>
+                    <textarea name="message" placeholder="Your Message" required aria-required="true"></textarea>
                     <br>
                     <input type="submit" value="Send">
                 </form>
@@ -48,7 +52,8 @@
             <hr />
 
             <footer>
-                <p>&copy; <span id="year"></span> Aaron Bergmann's portfolio | <a href="mailto:example@example.com">Contact Me</a></p>
+                <p>&copy; <span id="year"></span> Aaron Bergmann's portfolio | <a href="mailto:a_bergmann@salemstate.edu">Contact Me</a></p>
+                <small id="visitor-count"><i>You are visitor: </i></small>
             </footer>
         </div>
 

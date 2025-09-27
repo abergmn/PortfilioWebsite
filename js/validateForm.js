@@ -1,9 +1,11 @@
 function validateForm() {
-    const name = document.forms["contactForm"]["name"].value;
-    const email = document.forms["contactForm"]["email"].value;
-
-    if (name === "" || email === "") {
-        alert("ERROR! Make sure the name and email field are complete.");
+    const form = document.forms["contactForm"];
+    const name = form["name"].value.trim();
+    const email = form["email"].value.trim();
+    const message = form["message"].value.trim();
+    
+    if (!name || !email || !message) {
+        alert("Empty field detected! (check either name, email, or message");
         return false;
     }
 
