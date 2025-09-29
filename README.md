@@ -13,6 +13,10 @@ The website contains projects, contact information, and a simple admin login pan
 - **Admin Login** — Basic login form for accessing an admin page.
 - **Message Viewer** — Admin panel for displaying messages from users.
 - **Unique Visitor Counter** — Tracks and displays number of unique visitors by IP.
+- **Semantic HTML** — Helps screen readers understand page structure.
+- **Keyboard Navigation** — Makes website usable without a mouse.
+- **ARIA Roles & Labels** —  Provides additional info to assistive tech.
+- **High Contrast & Alt Text** — Improves Readability and comprehension.
 
 ---
 
