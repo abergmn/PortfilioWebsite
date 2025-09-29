@@ -31,19 +31,19 @@
                 <p>
                     Thanks for visiting my website! Questions? Comments? Looking to colaborate?
                     <br />
-                    Please reach out using the form below or by clicking <a href="mailto:example@example.com">this link</a> to email me directly!
+                    Please reach out using the form below or by clicking <a href="mailto:a_bergmann@salemstate.edu">this link</a> to email me directly!
                 </p>
 
-                <form id="contact-form-main"
+                <form class="contact-form"
                         name="contactForm"
                         action="contact-form-handler.php"
                         method="POST"
                         onsubmit="return validateForm();"
                         aria-label="Contact form">
-                    <input id="name" type="text" name="name" placeholder="Your Name" required aria-required="true" />
-                    <input id="email" type="email" name="email" placeholder="Your Email" required aria-required="true" />
-                    <textarea id="message" name="message" placeholder="Your Message" required aria-required="true"></textarea>
-                    <input type="submit" value="Send" />
+                    <input type="text" name="name" placeholder="Your Name" required aria-required="true" />
+                    <input type="email" name="email" placeholder="Your Email" required aria-required="true" />
+                    <textarea name="message" placeholder="Your Message" required aria-required="true"></textarea>
+                    <input class="generic-button" type="submit" value="Send" />
                 </form>
             </main>
     
@@ -58,7 +58,6 @@
             </footer>
         </div>
 
-        <!-- leave at bottom so script(s) load last -->
         <script src="/js/script.js"></script>
         <script src="/js/validateForm.js"></script>
     </body>

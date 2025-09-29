@@ -1,27 +1,39 @@
-#contact-form-main {
+.contact-form {
     display: flex;
     flex-direction: column;
+    gap: 12px;
+    max-width: 400px;
+    margin-top: 20px;
+    padding: 16px;
+    background-color: #c0c0c0;
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-bottom: 2px solid #808080;
+    border-right: 2px solid #808080;
 }
 
-form[name="contactForm"] input[type="text"],
-form[name="contactForm"] input[type="email"],
-form[name="contactForm"] textarea {
-    width: 100%;
-    max-width: 350px;
-    height: auto;
-    box-sizing: border-box;
-    margin-bottom: 8px;
-    padding: 4px 6px;
-}
-
-form[name="contactForm"] textarea {
-    min-height: 60px;
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+    font-size: 14px;
+    color: black;
+    background-color: #ffffff;
+    padding: 6px;
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-bottom: 2px solid #808080;
+    border-right: 2px solid #808080;
+    box-shadow: inset 1px 1px 0px #00000022;
     resize: vertical;
+    outline: none;
 }
 
-form[name="contactForm"] input[type="submit"] {
-    padding: 6px 12px;
-    font-size: 1rem;
-    cursor: pointer;
-    max-width: 120px;
+#contact-form input[type="text"]:focus,
+#contact-form input[type="email"]:focus,
+#contact-form textarea:focus {
+    background-color: #e0e0e0;
+}
+
+#contact-form textarea {
+    min-height: 100px;
 }

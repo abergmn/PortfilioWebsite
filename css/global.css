@@ -71,4 +71,33 @@ a:visited {
     color: purple;
     text-decoration: underline;
 }
+
+.generic-button {
+    font-size: 14px;
+    color: black;
+    background-color: #d4d0c8;
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-bottom: 2px solid #808080;
+    border-right: 2px solid #808080;
+    padding: 4px 12px;
+    margin: 4px;
+    cursor: pointer;
+    box-shadow: inset 1px 1px 0px #ffffff66;
+    text-align: center;
+    display: inline-block;
+}
+
+.generic-button:active {
+    border-top: 2px solid #808080;
+    border-left: 2px solid #808080;
+    border-bottom: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    box-shadow: inset -1px -1px 0px #ffffff66;
+    background-color: #c0c0c0;
+}
+
+.generic-button:hover {
+    background-color: #e0e0e0;
+}
 /* END -- basic global styling/rules */

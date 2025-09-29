@@ -1,7 +1,7 @@
 <?php
 $conn = new mysqli("localhost", "root", "", "portfolio_db");
-
 $result = $conn->query("SELECT * FROM messages");
+
 
 echo "<h2>Messages Received</h2>";
 echo "<table border='1'>
