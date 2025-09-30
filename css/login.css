@@ -1,4 +1,5 @@
-/* BEGIN -- basic global styling/rules */
+@import "global.css";
+
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #222222;
